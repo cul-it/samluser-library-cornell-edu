@@ -7,3 +7,4 @@ samluser is Drupal 7, samluser6 is Drupal 6
 
 The drupal 6 version is in the 'samluser6' branch, the other is in the master.
 
+see master for documentation
