@@ -17,3 +17,16 @@ followed by a | and another assignment if there are more
 These are stored in the Drupal variable simplesamlphp_auth_rolepopulation. Since we don't want to clobber a site's user list when this 'simplesaml_authentication_cul' feature is reverted we are NOT including simplesamlphp_auth_rolepopulation in the list of variables strongarm sets when the feature is installed. This means you have to manually configure the roles the first time you install simplesamlphp_auth_rolepopulation, and whatever users you add will be preserved.
 
 Users added manually via the Drupal User interface will not keep their roles/priveleges.
+----------
+
+After some evaluation:
+
+If 'Register users' is unchecked valid users have to be already in the user list. It checks based on the cornell email field so the user name of the account doesn't have to exactly match the 'Which attribute from simpleSAMLphp should be used as user's name:' (displayName) field.
+
+The role for a user set in 'Automatic role population from simpleSAMLphp attributes' overrides the role listed with the user. If a user is NOT listed there, whatever roles they have set in admin/user/user get wiped out when they log in.
+
+What we want:
+1. no automatic creation of user accounts
+2. users & roles listed in only one place (not users here and roles there)
+
+Maybe eduPersonEntitlement plus eduPersonScopedAffiliation is set up with something we could use to determine if someone is a library employee, but until there is a need for automatic account creation these automated roles are not useful.
