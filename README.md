@@ -30,3 +30,6 @@ What we want:
 2. users & roles listed in only one place (not users here and roles there)
 
 Maybe eduPersonEntitlement plus eduPersonScopedAffiliation is set up with something we could use to determine if someone is a library employee, but until there is a need for automatic account creation these automated roles are not useful.
+
+see https://www.incommon.org/federation/attributesummary.html
+
