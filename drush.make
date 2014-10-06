@@ -15,4 +15,5 @@ projects[simplesaml_authentication_cul][download][url] = "https://featureserver.
 projects[simplesaml_authentication_cul][location] = "https://featureserver.library.cornell.edu/fserver"
 projects[simplesaml_authentication_cul][type] = "module"
 projects[simplesamlphp_auth][version] = "2.0-alpha2"
+projects[simplesamlphp_auth][patch][] = "http://www.drupal.org/files/issues/simplesamlphp_auth-create-authmap-entries-1280930-29.patch"
 projects[strongarm][version] = "2.0"

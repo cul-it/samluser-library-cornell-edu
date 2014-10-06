@@ -33,3 +33,6 @@ Maybe eduPersonEntitlement plus eduPersonScopedAffiliation is set up with someth
 
 see https://www.incommon.org/federation/attributesummary.html
 
+----------
+patch for pre-existing Drupal users : https://www.drupal.org/node/1280930
+
