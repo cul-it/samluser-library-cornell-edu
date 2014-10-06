@@ -32,7 +32,3 @@ What we want:
 Maybe eduPersonEntitlement plus eduPersonScopedAffiliation is set up with something we could use to determine if someone is a library employee, but until there is a need for automatic account creation these automated roles are not useful.
 
 see https://www.incommon.org/federation/attributesummary.html
-
-----------
-patch for pre-existing Drupal users : https://www.drupal.org/node/1280930
-
