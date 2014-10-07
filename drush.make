@@ -5,12 +5,6 @@ core = 7.x
 api = 2
 projects[drupal][version] = "7.31"
 
-projects[authnamer][directory_name] = "authnamer"
-projects[authnamer][download][branch] = "master"
-projects[authnamer][download][type] = "git"
-projects[authnamer][download][url] = "git://github.com/jgreidy/authnamer.git"
-projects[authnamer][subdir] = "custom"
-projects[authnamer][type] = "module"
 projects[ctools][version] = "1.4"
 projects[entity][version] = "1.5"
 projects[features][version] =  "2.2"
