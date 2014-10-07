@@ -48,3 +48,5 @@ Given that there may be lots of stray users in the user table /admin/people we c
 We'll check off 'Reevaluate roles every time the user logs in.' to be sure any roles listed in the user list /admin/people will be ignored.
 
 The Feature with this setup in it will have to leave the automatic role population unspecified so the hosting site's users will stay intact as the Feature evolves & gets reverted etc.
+
+..
