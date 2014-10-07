@@ -32,3 +32,19 @@ What we want:
 Maybe eduPersonEntitlement plus eduPersonScopedAffiliation is set up with something we could use to determine if someone is a library employee, but until there is a need for automatic account creation these automated roles are not useful.
 
 see https://www.incommon.org/federation/attributesummary.html
+
+---------
+
+I tried hard to use the patch described here: https://www.drupal.org/node/1280930
+It should have allowed us to authorize the existing users with simpleSAMLphp but it didn't work. Removing the patch.
+
+Also attempts to set the authorization module in the authmap table failed.
+So for now we have to
+1. Automatically create accounts for users who succesfully log in via simpleSAML
+
+Given that there may be lots of stray users in the user table /admin/people we can avoid looking at all of them by assigning roles to the users who need them in /admin/config/people/simplesamlphp_auth in the 'Automatic role population from simpleSAMLphp attributes' section. This will be the authoritative list of the sites users, so
+2. users & roles listed in only one (authoritative) place
+
+We'll check off 'Reevaluate roles every time the user logs in.' to be sure any roles listed in the user list /admin/people will be ignored.
+
+The Feature with this setup in it will have to leave the automatic role population unspecified so the hosting site's users will stay intact as the Feature evolves & gets reverted etc.
